@@ -1,0 +1,123 @@
+header {
+  padding: 10px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+header div {
+  text-align: center;
+}
+
+header div h1 {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+header div p {
+  color: var(--text-color);
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 12px;
+}
+
+/*IMAGE UPLOAD AND PROGRESS BAR SECTION*/
+
+.upload-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-section div {
+  text-align: center;
+}
+
+.upload-section div p {
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.upload-section div .progrss_bar {
+  margin-top: 10px;
+  width: 945px;
+}
+
+/*IMAGE DISPLAY  SECTION*/
+
+.display-section {
+  width: 65%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.display-section .gallery {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.display-section .gallery img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 23px;
+  margin-left: 23px;
+}
+
+/*MEDIA QUERIES <RESPONSIVENESS */
+
+@media (max-width: 600px) {
+  header {
+    padding: 7px;
+    width: 100%;
+    height: 120px;
+  }
+
+  header div h1 {
+    font-size: 36px;
+    font-weight: 400;
+  }
+
+  header div p {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  /*IMAGE UPLOAD AND PROGRESS BAR SECTION  MEdIA QUERY*/
+
+  .upload-section div label img {
+    width: 25px;
+  }
+
+  .upload-section div p {
+    font-size: 12px;
+  }
+
+  .upload-section div .progrss_bar {
+    width: 350px;
+  }
+
+  /*IMAGE DISPLAY  SECTION MEdIA QUERY  */
+
+  .display-section {
+    width: 85%;
+  }
+
+  .display-section .gallery {
+    width: 100%;
+  }
+
+  .display-section .gallery img {
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+    margin-left: 18px;
+  }
+}
