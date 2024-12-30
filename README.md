@@ -2,7 +2,7 @@
 
 A **modern image gallery web application** built with React and Vite, designed to provide seamless image uploading and display functionality. 
 
-![Banner Image](https://via.placeholder.com/1200x400?text=Image+Gallery+Project)  
+![Banner Image](./public/images/banner.jpg)  
 *(Replace this with a screenshot or banner of your project)*
 
 ---
@@ -46,10 +46,6 @@ image-gallery-project/
 ├── vite.config.js   # Vite configuration
 └── package.json     # Project metadata and dependencies
 ```
-
-
-
-
 
 
 ## 🚀 Getting Started
