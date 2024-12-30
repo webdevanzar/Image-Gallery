@@ -2,7 +2,7 @@
 
 A **modern image gallery web application** built with React and Vite, designed to provide seamless image uploading and display functionality. 
 
-![Banner Image](./public/images/banner.jpg)  
+![Banner Image](./images/banner.png)  
 *(Replace this with a screenshot or banner of your project)*
 
 ---
