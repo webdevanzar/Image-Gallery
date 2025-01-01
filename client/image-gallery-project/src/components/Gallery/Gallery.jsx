@@ -4,6 +4,7 @@ import axios from "axios";
 import Box from "@mui/material/Box";
 import LinearProgress from "@mui/material/LinearProgress";
 import PopUp from "../Modal/Modal"; //default import
+const API_URL = "https://image-gallery-server-xi.vercel.app/api/images"
 const BASE_URL = "http://localhost:3007/images";
 
 export const Gallery = () => {
@@ -25,7 +26,7 @@ export const Gallery = () => {
     formData.append("upload_file", file); // Append the file to FormData
 
     try {
-      const response = await axios("http://localhost:3007/api/images/upload", {
+      const response = await axios(`${API_URL}/upload`, {
         method: "POST",
         headers: {
           "Content-Type": "multipart/formdata",
@@ -55,7 +56,7 @@ export const Gallery = () => {
 
   const fetchImages = async () => {
     try {
-      const response = await axios("http://localhost:3007/api/images");
+      const response = await axios(API_URL);
 
       setImages(response.data.data);
     } catch (error) {
