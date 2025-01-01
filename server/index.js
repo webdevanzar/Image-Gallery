@@ -24,7 +24,7 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/api/images", profileRoute);
+app.use("/", profileRoute);
 
 //ERROR HANDLING MIDDLEWARE
 app.use((err, req, res, next) => {

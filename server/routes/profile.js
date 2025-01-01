@@ -42,7 +42,7 @@ const storage = multer.diskStorage({
 // Create multer upload middleware
 const upload = multer({ storage: storage });
 
-router.post("/upload", upload.single("upload_file"), (req, res) => {
+router.post("/api/images/upload", upload.single("upload_file"), (req, res) => {
   const imageArray = readImageArray();
   imageArray.push(req.file.filename);
   writeImageArray(imageArray);
@@ -52,7 +52,7 @@ router.post("/upload", upload.single("upload_file"), (req, res) => {
   });
 });
 
-router.get("/", (req, res) => {
+router.get("/api/images", (req, res) => {
   const imageArray = readImageArray();
 
   if (imageArray) {
