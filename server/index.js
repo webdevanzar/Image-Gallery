@@ -9,6 +9,8 @@ const profileRoute = require("./routes/profile");
 app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
+
 
 //APPLICATION LEVEL MIDDLEWARE TO LOG Requests
 const LOG_FILE = path.join(__dirname, "request_logs.txt");
