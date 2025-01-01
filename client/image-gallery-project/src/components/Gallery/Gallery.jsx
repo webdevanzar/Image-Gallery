@@ -79,7 +79,7 @@ export const Gallery = () => {
       <section className="upload-section">
         <div>
           <label htmlFor="file-upload" className="upload-file">
-            <img src={"src/public/images/plusicon.png"} alt="" style={{width:"35px",height:"35px",backgroundColor:"gray",borderRadius:"50%"}}/>
+            <img src={"/images/plusicon.png"} alt="" style={{width:"35px",height:"35px",backgroundColor:"gray",borderRadius:"50%"}}/>
           </label>
 
           <input
